@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Product</title>
   <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css"> -->
-  <link rel="stylesheet" href="/pico.min.css">
+  <link rel="stylesheet" href="pico.min.css">
 </head>
 <body>
   <main class="container">
@@ -28,10 +28,17 @@
       <p>Fill in the form below to request early access:</p>
       
       <!-- Yandex Form Embed (iframe) -->
-      <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/68892ab084227c05386d3635?iframe=1" frameborder="0" name="ya-form-68892ab084227c05386d3635" width="650"></iframe>
+      <script src="https://forms.yandex.ru/_static/embed.js"></script>
+      <iframe 
+        src="https://forms.yandex.ru/u/68892ab084227c05386d3635?iframe=1" 
+        frameborder="0" 
+        name="ya-form-68892ab084227c05386d3635" 
+        width="650"
+        onload="document.getElementById('yandex-form-fallback').style.display='none';"
+      ></iframe>
       
       <!-- Optional direct link fallback -->
-      <p>If the form doesn't load, <a href="https://forms.yandex.com/u/68892ab084227c05386d3635/" target="_blank">click here</a> to open it.</p>
+      <p id="yandex-form-fallback">If the form doesn't load, <a href="https://forms.yandex.com/u/68892ab084227c05386d3635/" target="_blank">click here</a> to open it.</p>
     </section>
 
     <footer>
