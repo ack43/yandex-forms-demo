@@ -1,0 +1,25 @@
+/* assets/css/mobile.css */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  iframe {
+    height: 400px !important;
+  }
+
+  /* Adjust container padding if needed */
+  main.container {
+    padding: 1rem;
+  }
+
+  /* Make buttons or cards full width on mobile */
+  button, .card {
+    width: 100%;
+  }
+}

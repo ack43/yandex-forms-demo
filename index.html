@@ -1,53 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Product</title>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css"> -->
-  <link rel="stylesheet" href="pico.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <main class="container">
-    <header>
-      <h1>Your Product Name</h1>
-      <p>A short and clear value proposition that tells users what you offer.</p>
-    </header>
+---
+layout: default
+title: Yandex Forms Demo
+---
+{% include header.html %}
 
-    <section>
-      <h2>Why Choose Us?</h2>
-      <ul>
-        <li>✔ Simple and lightweight</li>
-        <li>✔ Works anywhere with no setup</li>
-        <li>✔ Trusted by many</li>
-      </ul>
-    </section>
+{% include features.html %}
 
-    <section>
-      <h2>Join the Beta</h2>
-      <p>Fill in the form below to request early access:</p>
-      
-      <!-- Yandex Form Embed (iframe) -->
-      <script src="https://forms.yandex.ru/_static/embed.js"></script>
-      <iframe 
-        id="yandex-form-68892ab084227c05386d3635"
-        src="https://forms.yandex.ru/u/68892ab084227c05386d3635?iframe=1" 
-        frameborder="0" 
-        name="ya-form-68892ab084227c05386d3635" 
-        width="650"
-        data-formid="68892ab084227c05386d3635"
-        onload="window.yandexFormsDemo.initYandexIframe(this)"
-      ></iframe>
-      
-      <!-- Optional direct link fallback -->
-      <p id="yandex-form-68892ab084227c05386d3635-fallback">If the form doesn't load, <a href="https://forms.yandex.com/u/68892ab084227c05386d3635/" target="_blank">click here</a> to open it.</p>
-    </section>
+{% include form.html %}
 
-    <footer>
-      <small>&copy; 2025 Your Name or Company. All rights reserved.</small>
-    </footer>
-  </main>
-</body>
-</html>
+{% include footer.html %}
